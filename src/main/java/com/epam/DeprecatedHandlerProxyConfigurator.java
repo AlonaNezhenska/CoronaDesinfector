@@ -37,7 +37,7 @@ public class DeprecatedHandlerProxyConfigurator implements ProxyConfigurator {
     }
 
     private Object getInvocationHandlerLogic(Method method, Object[] args, Object t) throws IllegalAccessException, InvocationTargetException {
-        System.out.println("**********, what are you doing, you idiot!! ");
+        System.out.println("Warning: calling a deprecated class. Consider switching to its replacement.");
         return method.invoke(t, args);
     }
 }
